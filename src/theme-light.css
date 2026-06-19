@@ -1,0 +1,692 @@
+/* Light theme for case study pages only (/work/*). */
+
+body.page-theme-light {
+  background: #ffffff;
+  color: #111827;
+}
+
+.page-content--light {
+  --case-text-muted: #646b78;
+  --light-heading: #111827;
+  --light-card-bg: #f3f4f5;
+  --light-card-border: rgba(17, 24, 39, 0.08);
+  --light-surface: rgba(17, 24, 39, 0.035);
+  --light-surface-strong: rgba(17, 24, 39, 0.06);
+  color: var(--light-heading);
+}
+
+/* Dark navigation (kept dark even on light case-study pages) */
+body.page-theme-light .top-nav {
+  background: rgba(3, 7, 15, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+body.page-theme-light nav a {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: var(--type-nav-size);
+  font-weight: var(--type-nav-weight);
+}
+
+body.page-theme-light nav a.active {
+  color: var(--brand-accent);
+}
+
+body.page-theme-light .contact-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+body.page-theme-light .contact-btn.active {
+  color: var(--brand-accent);
+}
+
+/* Case study hero */
+.page-content--light .case-study-breadcrumb a {
+  color: #6b7280;
+}
+
+.page-content--light .case-study-breadcrumb a:hover {
+  color: var(--brand-accent);
+}
+
+.page-content--light .case-study-breadcrumb [aria-hidden='true'] {
+  color: #9ca3af;
+}
+
+.page-content--light .case-study-breadcrumb-current {
+  color: #111827;
+}
+
+.page-content--light .case-study-hero h1,
+.page-content--light .case-study-next-title {
+  color: var(--light-heading);
+}
+
+.page-content--light .case-study-meta {
+  background: rgba(243, 244, 245, 0.95);
+}
+
+.page-content--light .case-study-meta dt {
+  color: #6b7280;
+  font-size: 0.6875rem;
+  font-weight: 500;
+}
+
+.page-content--light .case-study-meta dd {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.page-content--light .design-part-number-badge {
+  background: var(--brand-accent);
+  color: #111827;
+}
+
+.page-content--light .design-part-title {
+  color: #111827;
+}
+
+.page-content--light .design-principle-item h4 {
+  color: var(--case-text-muted);
+  font-weight: var(--type-subsection-heading-weight);
+  font-size: var(--type-area-title-size);
+}
+
+/* Sticky tabs */
+.page-content--light .case-study-tabs-sticky {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(17, 24, 39, 0.06);
+}
+
+.page-content--light .case-study-tabs button {
+  border-color: rgba(17, 24, 39, 0.12);
+  color: #374151;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.page-content--light .case-study-tabs button:hover {
+  border-color: rgba(17, 24, 39, 0.22);
+  color: var(--light-heading);
+}
+
+.page-content--light .case-study-tabs button.active {
+  border-color: var(--brand-accent);
+  background: var(--brand-accent);
+  color: #111827;
+}
+
+/* Section headings + body copy */
+.page-content--light .case-study-sections .challenge-header h2,
+.page-content--light .case-study-sections .design-approach-header h2,
+.page-content--light .case-study-sections .key-features-header h2,
+.page-content--light .case-study-sections .reflection-title,
+.page-content--light .case-study-sections .current-status-header h2,
+.page-content--light .overview-header h2,
+.page-content--light .design-part-heading,
+.page-content--light .design-discover-card-header h4,
+.page-content--light .design-version-title,
+.page-content--light .design-evolution-title,
+.page-content--light .design-gallery-title,
+.page-content--light .design-version-list-title,
+.page-content--light .reflection-item h3,
+.page-content--light .current-status-copy h3,
+.page-content--light .feature-showcase-copy h3,
+.page-content--light .challenge-card h3,
+.page-content--light .overview-core-areas-header h3,
+.page-content--light .overview-narrative-card h3,
+.page-content--light .overview-area-title {
+  color: #111827;
+}
+
+.page-content--light .case-study-sections .challenge-header h2,
+.page-content--light .case-study-sections .design-approach-header h2,
+.page-content--light .case-study-sections .key-features-header h2,
+.page-content--light .case-study-sections .reflection-title,
+.page-content--light .case-study-sections .current-status-header h2,
+.page-content--light .overview-header h2 {
+  font-size: var(--type-section-heading-size);
+  font-weight: var(--type-section-heading-weight);
+  letter-spacing: var(--type-section-heading-tracking);
+  line-height: var(--type-section-heading-line-height);
+}
+
+.page-content--light .design-part-heading,
+.page-content--light .design-discover-card-header h4,
+.page-content--light .design-version-title,
+.page-content--light .design-evolution-title,
+.page-content--light .design-gallery-title,
+.page-content--light .current-status-copy h3,
+.page-content--light .feature-showcase-copy h3,
+.page-content--light .overview-core-areas-header h3,
+.page-content--light .overview-narrative-card h3 {
+  font-size: var(--type-subsection-heading-size);
+  font-weight: var(--type-subsection-heading-weight);
+  line-height: var(--type-subsection-heading-line-height);
+}
+
+.page-content--light .reflection-item h3 {
+  font-size: clamp(1.125rem, 0.4vw + 1rem, 1.3rem);
+  font-weight: var(--type-subsection-heading-weight);
+  line-height: var(--type-subsection-heading-line-height);
+}
+
+.page-content--light .challenge-card h3,
+.page-content--light .overview-area-title {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.page-content--light .overview-narrative-card,
+.page-content--light .overview-area-tile {
+  background: var(--light-card-bg);
+}
+
+.page-content--light .overview-narrative-card {
+  border-left: 4px solid var(--brand-accent);
+  border-radius: 0 var(--case-card-radius) var(--case-card-radius) 0;
+  box-shadow: 0 18px 50px rgba(17, 24, 39, 0.06);
+}
+
+.page-content--light .overview-area-icon {
+  background: rgba(255, 191, 0, 0.45);
+  color: #111827;
+}
+
+.page-content--light .overview-area-tile {
+  color: #111827;
+}
+
+.page-content--light .challenge-card-number {
+  color: var(--brand-accent-muted);
+}
+
+.page-content--light .case-study-sections .case-section-text p,
+.page-content--light .case-study-sections .overview-card-list,
+.page-content--light .case-study-sections .overview-narrative-body,
+.page-content--light .case-study-sections .overview-area-description,
+.page-content--light .case-study-sections .overview-card-list li,
+.page-content--light .case-study-sections .challenge-card-list li,
+.page-content--light .case-study-sections .design-observed-list li,
+.page-content--light .case-study-sections .design-discover-list li,
+.page-content--light .case-study-sections .design-diagram-nodes li,
+.page-content--light .case-study-sections .design-problem-list li,
+.page-content--light .case-study-sections .design-wireframe-caption,
+.page-content--light .case-study-sections .design-feedback-table td,
+.page-content--light .case-study-sections .design-version-desc,
+.page-content--light .case-study-sections .design-evolution-list li,
+.page-content--light .case-study-sections .feature-showcase-copy li,
+.page-content--light .case-study-sections .reflection-item li,
+.page-content--light .case-study-sections .current-status-copy p,
+.page-content--light .case-study-sections .current-status-copy li,
+.page-content--light .design-version-description,
+.page-content--light .design-version-list li,
+.page-content--light .design-evolution-stage figcaption {
+  color: var(--case-text-muted);
+  font-weight: var(--type-body-weight);
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-line-height);
+}
+
+.page-content--light .case-study-sections .overview-intro,
+.page-content--light .case-study-sections .challenge-intro,
+.page-content--light .case-study-sections .design-approach-intro,
+.page-content--light .case-study-sections .key-features-intro,
+.page-content--light .case-study-sections .current-status-intro {
+  color: #111827;
+  font-size: var(--case-section-intro-size);
+  line-height: var(--case-section-intro-line-height);
+  font-weight: var(--type-body-weight);
+}
+
+.page-content--light .design-insight-to {
+  color: var(--brand-accent);
+}
+
+.page-content--light .design-outcome-to {
+  color: var(--brand-accent);
+}
+
+.page-content--light .design-part-number-badge,
+.page-content--light .design-part-dash {
+  color: #111827;
+}
+
+.page-content--light .design-discover-panel--sources {
+  background: var(--light-card-bg);
+  border-top: 4px solid var(--brand-accent);
+  box-shadow: 0 18px 50px rgba(17, 24, 39, 0.06);
+}
+
+.page-content--light .design-discover-source-icon {
+  color: #6b7280;
+}
+
+.page-content--light .design-observed-label {
+  color: #111827;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.6875rem;
+}
+
+.page-content--light .design-observed-card-icon {
+  color: var(--brand-accent);
+  opacity: 1;
+}
+
+.page-content--light .design-discover-sources-header h4,
+.page-content--light .design-discover-panel-header h4 {
+  color: #111827;
+}
+
+.page-content--light .design-discover-source-text,
+.page-content--light .design-observed-card p {
+  color: var(--case-text-muted);
+}
+
+.page-content--light .design-discover-source-item {
+  border-left-color: rgba(17, 24, 39, 0.12);
+}
+
+.page-content--light .design-observed-card {
+  background: #ffffff;
+  border: 1px solid var(--brand-accent-border);
+}
+
+.page-content--light .design-insight-banner {
+  border-top-color: rgba(17, 24, 39, 0.08);
+}
+
+.page-content--light .design-insight-from {
+  color: #111827;
+  font-weight: 600;
+}
+
+.page-content--light .design-outcome-from {
+  color: #111827;
+  font-weight: 600;
+}
+
+.page-content--light .design-problem-list strong {
+  color: #111827;
+}
+
+.page-content--light .design-outcome-kicker {
+  color: #6b7280;
+}
+
+.page-content--light .design-outcome-kicker--solution {
+  color: var(--brand-accent);
+}
+
+.page-content--light .design-card-header-icon {
+  color: var(--brand-accent);
+}
+
+.page-content--light .design-problem-list li p,
+.page-content--light .design-define-card {
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.1);
+}
+
+.page-content--light .design-principles-panel {
+  background: var(--light-card-bg);
+}
+
+.page-content--light .design-define-card-header {
+  background: #f3f4f5;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+}
+
+.page-content--light .design-define-card-header h4,
+.page-content--light .design-principle-item h4 {
+  color: #111827;
+}
+
+.page-content--light .design-define-problem-state,
+.page-content--light .design-define-solution-path {
+  color: #111827;
+}
+
+.page-content--light .design-define-kicker {
+  color: #6b7280;
+}
+
+.page-content--light .design-define-kicker--solution {
+  color: var(--brand-accent);
+}
+
+.page-content--light .design-principles-panel {
+  box-shadow: 0 18px 50px rgba(17, 24, 39, 0.06);
+}
+
+.page-content--light .design-principle-icon-wrap {
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(17, 24, 39, 0.08);
+}
+
+.page-content--light .design-principle-item p,
+.page-content--light .reflection-item p {
+  color: var(--case-text-muted);
+  font-weight: var(--type-body-weight);
+}
+
+/* Shared card surfaces */
+.page-content--light .overview-card,
+.page-content--light .challenge-card,
+.page-content--light .design-discover-card,
+.page-content--light .design-principle-card,
+.page-content--light .design-mapping-panel,
+.page-content--light .design-feedback-table-wrap,
+.page-content--light .design-version-card,
+.page-content--light .design-outcome-card {
+  border-color: var(--light-card-border);
+  background: var(--light-card-bg);
+  box-shadow: 0 18px 50px rgba(17, 24, 39, 0.06);
+  backdrop-filter: none;
+}
+
+.page-content--light .current-status-panel {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.page-content--light .design-version-card--foundation {
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  box-shadow: none;
+}
+
+.page-content--light .challenge-card {
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  border-top: 4px solid var(--brand-accent);
+  background: var(--light-card-bg);
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.page-content--light .challenge-card h3 {
+  color: #111827;
+  font-weight: var(--type-subsection-heading-weight);
+}
+
+.page-content--light .challenge-card-icon {
+  color: var(--brand-accent);
+}
+
+.page-content--light .challenge-user-concern {
+  background: none;
+  border-top-color: rgba(17, 24, 39, 0.1);
+}
+
+.page-content--light .challenge-user-concern-label,
+.page-content--light .challenge-user-concern p {
+  color: #111827;
+}
+
+.page-content--light .challenge-user-concern-label {
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  font-style: italic;
+}
+
+.page-content--light .design-diagram-nodes li {
+  background: var(--light-surface);
+}
+
+.page-content--light .design-diagram-center {
+  background: var(--brand-accent-soft);
+  color: var(--brand-accent);
+}
+
+.page-content--light .design-wireframes-note {
+  color: #4b5563;
+  font-size: var(--type-body-size);
+  font-weight: var(--type-body-weight);
+  line-height: var(--case-card-body-line-height);
+  margin: 0 0 clamp(32px, 4vw, 48px);
+}
+
+.page-content--light .design-wireframes-note--narrow {
+  max-width: min(42rem, 68%);
+  margin-bottom: clamp(48px, 6vw, 72px);
+}
+
+.page-content--light .design-wireframes-structure--prominent .design-wireframes-structure-image {
+  background: #f0f1f3;
+}
+
+.page-content--light .design-wireframes-structure-note {
+  color: #4b5563;
+  font-size: var(--type-body-size);
+  line-height: var(--case-card-body-line-height);
+}
+
+.page-content--light .design-wireframes-note em {
+  color: var(--light-heading);
+}
+
+.page-content--light .design-wireframe-scroll,
+.page-content--light .design-wireframe-frame {
+  background: #f5f5f5;
+  border-color: rgba(15, 23, 42, 0.1);
+}
+
+.page-content--light .image-scroll-frame--wireframe,
+.page-content--light .image-scroll-frame--showcase,
+.page-content--light .image-scroll-frame--current-status,
+.page-content--light .image-scroll-frame--iteration {
+  background: transparent;
+  border-color: rgba(17, 24, 39, 0.12);
+}
+
+.page-content--light .case-section--design-approach .image-scroll-frame--wireframe,
+.page-content--light .case-section--design-approach .image-scroll-frame--iteration {
+  background: #f0f1f3;
+}
+
+.page-content--light .case-section--key-features--bordered-media .image-scroll-frame--showcase img {
+  border-color: rgba(17, 24, 39, 0.08);
+}
+
+.page-content--light .case-section--key-features .image-scroll-frame--showcase,
+.page-content--light .case-section--key-features .image-scroll-frame--showcase img,
+.page-content--light .feature-showcase-row--showcase-bg .image-scroll-frame--showcase,
+.page-content--light .feature-showcase-row--showcase-bg .image-scroll-frame--showcase img {
+  background: transparent;
+}
+
+.page-content--light .design-wireframe-item figcaption,
+.page-content--light .design-iteration-comparison-stage figcaption {
+  color: var(--light-heading);
+}
+
+.page-content--light .design-gallery-item figcaption {
+  color: var(--brand-accent);
+}
+
+.page-content--light .design-feedback-th-icon {
+  color: var(--brand-accent);
+}
+
+.page-content--light .design-feedback-table th,
+.page-content--light .design-feedback-table td {
+  border-color: rgba(15, 23, 42, 0.1);
+  color: var(--case-text-muted);
+}
+
+.page-content--light .design-feedback-table th {
+  background: #f3f4f5;
+  color: #111827;
+}
+
+.page-content--light .design-feedback-table tbody tr {
+  background: #ffffff;
+}
+
+.page-content--light .design-version-card--evolution {
+  background: #ffffff;
+  border: 2px solid var(--brand-accent);
+  box-shadow: none;
+}
+
+.page-content--light .design-version-list--foundation .design-version-list-icon {
+  color: #9ca3af;
+}
+
+.page-content--light .design-version-list--evolution .design-version-list-icon {
+  color: var(--brand-accent);
+}
+
+.page-content--light .design-iteration-comparison-title,
+.page-content--light .design-iteration-comparison-stage figcaption {
+  color: #111827;
+}
+
+.page-content--light .image-scroll-frame--iteration {
+  background: transparent;
+  border-color: rgba(17, 24, 39, 0.12);
+}
+
+.page-content--light .design-iteration-comparison-stages > .design-iteration-arrow {
+  color: var(--brand-accent);
+}
+
+.page-content--light .design-version-title {
+  border-bottom-color: rgba(15, 23, 42, 0.12);
+}
+
+.page-content--light .design-gallery {
+  border-top-color: rgba(15, 23, 42, 0.1);
+}
+
+.page-content--light .design-view-more-btn {
+  background: var(--brand-accent-soft-strong);
+  color: #374151;
+}
+
+.page-content--light .design-view-more-btn:hover {
+  background: var(--brand-accent-soft-hover);
+  color: var(--light-heading);
+}
+
+.page-content--light .image-maximize-btn {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(15, 23, 42, 0.12);
+  color: #374151;
+}
+
+.page-content--light .image-maximize-btn:hover {
+  background: #fffbeb;
+  border-color: var(--brand-accent-border);
+  color: var(--brand-accent);
+}
+
+.page-content--light .current-status-swiper {
+  background: transparent;
+}
+
+.page-content--light .image-scroll-frame--current-status {
+  background: transparent;
+  border-color: rgba(17, 24, 39, 0.12);
+}
+
+.page-content--light .case-study-next-btn {
+  border-color: rgba(15, 23, 42, 0.12);
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.page-content--light .case-study-next-btn:hover {
+  border-color: var(--brand-accent-border);
+  background: #fffbeb;
+}
+
+.page-content--light .case-study-next-label {
+  color: var(--brand-accent);
+}
+
+.page-content--light .design-insight-arrow {
+  color: #374151;
+}
+
+.page-content--light .design-insight-arrow-line,
+.page-content--light .design-outcome-arrow-line {
+  background: rgba(15, 23, 42, 0.22);
+}
+
+.page-content--light .design-insight-arrow-line::after,
+.page-content--light .design-outcome-arrow-line::after {
+  border-top-color: rgba(15, 23, 42, 0.22);
+}
+
+.page-content--light .challenge-swiper .swiper-nav-btn,
+.page-content--light .challenge-swiper .swiper-nav-btn--next {
+  background: #ffffff;
+  color: var(--brand-accent);
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+}
+
+.page-content--light .challenge-swiper .swiper-nav-btn:hover,
+.page-content--light .challenge-swiper .swiper-nav-btn--next:hover {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.2);
+  color: var(--brand-accent);
+}
+
+.page-content--light .swiper-nav-btn {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--brand-accent);
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+}
+
+.page-content--light .swiper-nav-btn--next {
+  background: var(--brand-accent-soft);
+  color: var(--brand-accent);
+}
+
+.page-content--light .swiper-nav-btn:hover,
+.page-content--light .swiper-nav-btn--next:hover {
+  background: var(--brand-accent-soft-strong);
+  color: var(--brand-accent);
+}
+
+/* Light footer */
+body.page-theme-light .contact-section {
+  color: #111827;
+  border-top-color: rgba(15, 23, 42, 0.1);
+}
+
+body.page-theme-light .contact-section h2 {
+  color: #111827;
+}
+
+body.page-theme-light .contact-section h2 span,
+body.page-theme-light .contact-link,
+body.page-theme-light .social-links a {
+  color: var(--brand-accent);
+}
+
+body.page-theme-light .contact-label {
+  color: #374151;
+}
+
+body.page-theme-light .social-links {
+  color: #4b5563;
+}
+
+body.page-theme-light .scroll-to-top {
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(15, 23, 42, 0.12);
+  color: var(--brand-accent);
+}
+
+body.page-theme-light .scroll-to-top:hover {
+  border-color: var(--brand-accent-border);
+  color: var(--brand-accent);
+}
